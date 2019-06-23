@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>coda | Documentation</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link rel="stylesheet" href="css/bootstrap-grid.css"><!-- Bootstrap grid -->
+	<link rel="stylesheet" href="css/highlight/agate.css"><!-- Highlight -->
+
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+	<div class="container top">
+
+		<div class="row is-flex">
+
+			<div class="menu col-lg-3 col-md-3 col-sm-12 col-xs-12">
+
+				<div class="logo">
+					<p class="text-cursor">coda</p>
+				</div>
+
+				<div class="sticky">
+
+					<nav>
+						<ul>
+							<li class="btn-scroll-to started-item" data-scroll-to=".started">1. Getting started</li>
+							<li class="btn-scroll-to html-structure-item" data-scroll-to=".html-structure">2. HTML structure</li>
+							<li class="btn-scroll-to css-structure-item" data-scroll-to=".css-structure">3. CSS structure</li>
+							<li class="btn-scroll-to java-script-item" data-scroll-to=".java-script">4. JavaScript</li>
+							<li class="btn-scroll-to sources-credits-item" data-scroll-to=".sources-credits">5. Sources and credits</li>
+						</ul>
+					</nav>
+
+				</div>
+
+			</div>
+
+			<div class="content col-lg-8 col-md-8 col-sm-12 col-xs-12">
+
+                <main class="main-content">
+
+                    <h3 class="center">"coda" documentation by "AirFast" v1.2</h3>
+                    <hr>
+                    <h1 class="center">"coda"</h1>
+
+                    <p>
+                        created: july 17, 2018<br>
+                        last update: september 5, 2018<br>
+                        by: AirFast<br>
+                        email: <a href="mailto:AirFast.88@gmail.com">AirFast.88@gmail.com</a>
+                    </p>
+
+                    <p>Thank you for purchasing my template. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/airfast">here</a>. Thanks so much!</p>
+
+                    <hr>
+
+                    <section class="section started">
+
+                        <h2>1. Getting started - <div class="btn-scroll-to" data-scroll-to="body">top</div></h2>
+
+                        <p>We assume you have basic knowledge of HTML / CSS and JS. In this doc, you will not learn how to code but you will learn how to setup, use and customize the theme. Before you begin to make sure you have a code editor, you can use a code editor like <a href="https://notepad-plus-plus.org/">Notepad++</a> will be enough.</p>
+
+                        <h3>Features</h3>
+                        <p>All in this wonderful template is prepared for easy setup and use it:</p>
+                        <ul>
+                            <li>fully responsive</li>
+                            <li>clean and modern design</li>
+                            <li>based on bootstrap 4</li>
+                            <li>web friendly fonts</li>
+                            <li>several color schemes</li>
+                            <li>and more...</li>
+                        </ul>
+
+                        <h3>File/Folder structure</h3>
+                        <p>Within the download, you'll find the following file structure, logically grouped common assets.</p>
+                        <p>Once downloaded, unzip the compressed folder to see the structure of the template. You'll see something like this:</p>
+                        <pre>
+coda/
+├── css/
+├── fonts/
+├── img/
+├── js/
+├── libs/
+├── index.html
+└── other files</pre>
+                        <ul>
+                            <li><b>css:</b> this folder contains all style files or stylesheets.</li>
+                            <li><b>fonts:</b> this folder contains all the fonts used for in the Template.</li>
+                            <li><b>img:</b> this folder contains all the images</li>
+                            <li><b>js:</b> this folder contains all the scripts</li>
+                            <li><b>libs:</b> this folder contains all the scripts and all style files or stylesheets separate auxiliary libraries</li>
+                        </ul>
+
+                    </section>
+
+                    <hr>
+
+                    <section class="section html-structure">
+
+                        <h2>2. HTML Structure - <div class="btn-scroll-to" data-scroll-to="body">top</div></h2>
+                        <p>On opening the main index.html file. You can see the full HTML structure of the template. Every section of the template is properly commented so you can see which section starts/ends.</p>
+
+                        <p>For example, you want to do one of the following:</p>
+
+                        <h3>Setting the color scheme</h3>
+                        <p>The template has three color schemes.</p>
+                        <p><span class="color-scheme blue"></span><span class="color-name"> - <b>coda-blue-color-scheme</b></span></p>
+                        <p><span class="color-scheme pink"></span><span class="color-name"> - <b>coda-pink-color-scheme</b></span></p>
+                        <p><span class="color-scheme green"></span><span class="color-name"> - <b>coda-green-color-scheme</b></span></p>
+                        <p>Now set the first, blue, color. If you want to change the color, find the following code:</p>
+                        <pre>
+...
+&lt;body id="coda-body" class="coda-blue-color-scheme"&gt;
+...</pre>
+                        <p>You need to rewrite the attribute value, for example in this way <code class="html">class="coda-green-color-scheme"</code></p>
+
+                        <h3>Header</h3>
+                        <p>Editing information in header is very simple.</p>
+
+                        <p class="sub-title"><strong>Change image.</strong> You can easily change image with some simple steps</p>
+                        <ol>
+                            <li>Prepare your image, resize it to 1920px width, save as a .jpg file (quality 70%) for the optimal image size to have a fast loading page.</li>
+                            <li>Copy your image to /img folder.</li>
+                            <li>Find the appropriate section code and change image URL in the markup.</li>
+                        </ol>
+
+                        <p>These actions apply to all photos for your template.</p>
+
+                        <p class="sub-title"><strong>Want to change the background image in header?</strong> Open in the editor index.html. Find this code and change image URL:</p>
+                        <pre>
+&lt;!-- Start Header --&gt;
+&lt;header id="coda-about" class="coda-header" style="background-image: url(img/woman-header.jpg)"&gt;
+    &lt;!-- header background image --&gt;
+    &lt;img class="coda-background-img" src="img/woman-header.jpg" alt="header image"&gt;
+    &lt;!-- end header background image --&gt;</pre>
+                        <p>URL is placed in this attributes <code class="html">style="background-image: url(img/woman-header.jpg)"</code> and <code class="html">src="img/woman-header.jpg"</code></p>
+
+                        <p class="sub-title"><strong>Do you want to change the text in the header?</strong> Open in the editor index.html. Find this code and change a text in it:</p>
+                        <pre>
+&lt;!-- Start Header --&gt;
+&lt;header id="coda-about" class="coda-header" style="background-image: url(img/woman-header.jpg)"&gt;
+    ...
+    &lt;div class="coda-header-text"&gt;
+        ...
+        &lt;!-- profession --&gt;
+        &lt;p class="coda-profession"&gt;ui/ux designer&lt;/p&gt;
+        &lt;!-- end profession --&gt;
+        &lt;!-- first name, last Name --&gt;
+        &lt;h1 class="coda-name"&gt;Tawita Owens&lt;/h1&gt;
+        &lt;!-- end first name, last Name --&gt;
+        &lt;!-- "About me" button --&gt;
+        &lt;a href="#about" class="coda-underscore coda-pop-up-btn"&gt;learn more about me&lt;i class="coda-left-arrow-ico"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;!-- end "About me" button --&gt;
+        ...
+    &lt;/div&gt;
+&lt;/header&gt;
+&lt;!-- End Header --&gt;</pre>
+                        <p>In this code snippet is placed your profession <code class="html">&lt;p class="coda-profession"&gt;ui/ux designer&lt;/p&gt;</code></p>
+                        <p>In this code snippet is placed your name <code class="html">&lt;h1 class="coda-name"&gt;Tawita Owens&lt;/h1&gt;</code></p>
+
+                        <p class="sub-title"><strong>Would you like to change the information in the pop-up window About me?</strong> All code for pop-up windows is placed at the bottom of the index.html file. For an example, let's take a pop-up window About me. Find this code and change image URL or add another new image:</p>
+                        <pre>
+&lt;!-- Start About me (Pop-up window) --&gt;
+&lt;div id="about" class="coda-pop-up-window"&gt;
+    ...
+    &lt;!-- pop-up window content, article --&gt;
+    &lt;article class="coda-pop-up-content"&gt;
+        ...
+        &lt;div class="coda-sticky"&gt;
+            &lt;div class='coda-video-responsive'&gt;
+                &lt;iframe src="https://player.vimeo.com/video/76979871" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+            &lt;/div&gt;
+            &lt;img class="coda-img-responsive" src="img/man-header.jpg" alt="text"&gt;
+        &lt;/div&gt;
+        ...
+    &lt;/article&gt;
+    &lt;!-- end pop-up window content, article --&gt;
+&lt;/div&gt;
+&lt;!-- End About me (Pop-up window) --&gt;</pre>
+                        <p>URL is placed in this attribute <code class="html">src="img/man-header.jpg"</code></p>
+                        <p>If you want to add another image, insert this html code <code>&lt;img class="coda-img-responsive" src="img/url-for-image.jpg" alt="text"&gt;</code></p>
+                        <p>If you want to add video, insert the html code of such sample</p>
+                        <pre>
+&lt;div class='coda-video-responsive'&gt;
+    &lt;iframe src="https://player.vimeo.com/video/76979871" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</pre>
+                        <p>This may be Vimeo or Youtube video, copy the html code that you will generate the video player to insert. Just do not specify the width and height for the video, the template will automatically adjust the size of the area for the video.</p>
+
+                        <p>Edit information about yourself, add a brief description this:</p>
+                        <pre>
+&lt;!-- Start About me (Pop-up window) --&gt;
+&lt;div id="about" class="coda-pop-up-window"&gt;
+    ...
+    &lt;!-- pop-up window content, article --&gt;
+    &lt;article class="coda-pop-up-content"&gt;
+        ...
+        &lt;div class="coda-sticky"&gt;
+            &lt;header class="coda-pop-up-header"&gt;
+                &lt;h3&gt;About me&lt;/h3&gt;
+            &lt;/header&gt;
+            &lt;p&gt;Phasellus tortor eros, ...&lt;/p&gt;
+            ...
+            &lt;footer class="coda-pop-up-footer"&gt;
+                &lt;dl class="coda-description-container"&gt;
+                    &lt;div class="coda-description-item"&gt;
+                        &lt;dt class="coda-description-name"&gt;date fo birth:&lt;/dt&gt;
+                        &lt;dd class="coda-description-data"&gt;27 july 1987&lt;/dd&gt;
+                    &lt;/div&gt;
+                    &lt;div class="coda-description-item"&gt;
+                        &lt;dt class="coda-description-name"&gt;profession:&lt;/dt&gt;
+                        &lt;dd class="coda-description-data"&gt;web developer&lt;/dd&gt;
+                    &lt;/div&gt;
+                    &lt;div class="coda-description-item"&gt;
+                        &lt;dt class="coda-description-name"&gt;languages spoken:&lt;/dt&gt;
+                        &lt;dd class="coda-description-data"&gt;english, german&lt;/dd&gt;
+                    &lt;/div&gt;
+                &lt;/dl&gt;
+            &lt;/footer&gt;
+        &lt;/div&gt;
+        ...
+    &lt;/article&gt;
+    &lt;!-- end pop-up window content, article --&gt;
+&lt;/div&gt;
+&lt;!-- End About me (Pop-up window) --&gt;</pre>
+
+                        <p>You can insert this part of the code to enlarge the description of yourself:</p>
+                        <pre>
+&lt;dl class="coda-description-container"&gt;
+    ...
+    &lt;div class="coda-description-item"&gt;
+        &lt;dt class="coda-description-name"&gt;hobby:&lt;/dt&gt;
+        &lt;dd class="coda-description-data"&gt;basketball, crossfit&lt;/dd&gt;
+    &lt;/div&gt;
+&lt;/dl&gt;</pre>
+                        <p>Below is how to create your own popup windows.</p>
+
+                        <h3>Editing sections</h3>
+                        <p>Change text or some element is also very easy.</p>
+                        <p>Find the appropriate section or block code and change a text or element in the markup. Let's go from the top to the bottom of the page.</p>
+
+                        <p class="sub-title"><strong>How to create categories in the Portfolio section?</strong> Open in the editor index.html. Find this code and change it:</p>
+                        <pre>
+&lt;!-- portfolio filter navigation --&gt;
+&lt;div class="col-md-10 col-12"&gt;
+     &lt;ul class="coda-filter-nav"&gt;
+        &lt;li class="coda-filter-nav-item coda-underscore" data-filter="all"&gt;all&lt;/li&gt;
+        &lt;li class="coda-filter-nav-item coda-underscore" data-filter="1"&gt;web design&lt;/li&gt;
+        &lt;li class="coda-filter-nav-item coda-underscore" data-filter="2"&gt;ui design&lt;/li&gt;
+        &lt;li class="coda-filter-nav-item coda-underscore" data-filter="3"&gt;illustration&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- end portfolio filter navigation --&gt;</pre>
+                        <p>This code snippet contains navigation for your portfolio. You can customize the navigation to their needs. You can add or change categories.</p>
+                        <p>In this code snippet there is a navigation item that will represent all your works <code class="html">&lt;li class="coda-filter-nav-item coda-underscore" data-filter="all"&gt;all&lt;/li&gt;</code> If you want to change its name.</p>
+                        <p>The following navigation elements are responsible for each specific category. Let's add a new category.</p>
+                        <p>Insert this code snippet <code class="html">&lt;li class="coda-filter-nav-item coda-underscore" data-filter="ux-design"&gt;ux design&lt;/li&gt;</code> It should be noted that this attribute <code class="html">data-filter="ux-design"</code> contains information about the category for which it will respond. In this simple way, we added a new category.</p>
+
+                        <p class="sub-title"><strong>Binding portfolio items to the appropriate category.</strong> Now find this code and change it:</p>
+                        <pre>
+&lt;!-- portfolio items container --&gt;
+&lt;div class="row filtr-container coda-filter-container"&gt;
+    &lt;!-- portfolio item, article --&gt;
+    &lt;article class="col-lg-6 col-12 filtr-item coda-filter-item" data-category="1" data-sort="value"&gt;
+        &lt;div class="coda-portfolio-item"&gt;
+            &lt;img class="coda-img" src="img/web-design-1.jpg" alt="sample"&gt;
+            &lt;div class="coda-portfolio-item-content"&gt;
+                &lt;header class="coda-portfolio-item-header"&gt;
+                    &lt;h3&gt;&lt;a href="#travel" class="coda-underscore coda-pop-up-btn"&gt;Travel agency&lt;/a&gt;&lt;/h3&gt;
+                &lt;/header&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;!-- end portfolio item, article --&gt;
+    ...
+&lt;/div&gt;
+&lt;!-- end portfolio items container --&gt;</pre>
+                        <p>Inside the container, add a new portfolio item, this way:</p>
+                        <pre>
+&lt;!-- portfolio items container --&gt;
+&lt;div class="row filtr-container coda-filter-container"&gt;
+    ...
+    &lt;!-- portfolio item, article --&gt;
+    &lt;article class="col-lg-6 col-12 filtr-item coda-filter-item" data-category="ux-design" data-sort="value"&gt;
+        &lt;div class="coda-portfolio-item"&gt;
+            &lt;img class="coda-img" src="img/ux-design.jpg" alt="sample"&gt;
+            &lt;div class="coda-portfolio-item-content"&gt;
+                &lt;header class="coda-portfolio-item-header"&gt;
+                    &lt;h3&gt;&lt;a href="#ux-design-pop-up-window" class="coda-underscore coda-pop-up-btn"&gt;UX design, work name&lt;/a&gt;&lt;/h3&gt;
+                &lt;/header&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;!-- end portfolio item, article --&gt;
+&lt;/div&gt;
+&lt;!-- end portfolio items container --&gt;</pre>
+                        <p>In order to attach a portfolio item to the appropriate category in the filter, we specify the category name in this attribute: <code class="html">data-category="ux-design"</code></p>
+                        <p>Also, change the photo for the project, URL is placed in this attribute: <code class="html">src="img/ux-design.jpg"</code></p>
+                        <p>We also need to specify the name of the pop-up window in this attribute: <code class="html">href="#ux-design-pop-up-window"</code> Then write the name of the project.</p>
+                        <p>Now we will create the corresponding popup window.</p>
+
+                        <p class="sub-title"><strong>How do I create a popup window?</strong> In fact, the code structure of the popup window is:</p>
+                        <pre>
+&lt;!-- Start Pop-up window --&gt;
+&lt;div id="pop-up-id" class="coda-pop-up-window"&gt;
+    &lt;div class="coda-pop-up-top-panel"&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="row justify-content-end"&gt;
+                &lt;div class="col-auto"&gt;
+                    &lt;!-- close pop-up window button --&gt;
+                    &lt;a href="#pop-up-id" class="coda-pop-up-btn"&gt;
+                        &lt;div class="coda-close-ico"&gt;
+                            &lt;span class="coda-label"&gt;close&lt;/span&gt;
+                            &lt;div class="coda-close-wrap"&gt;
+                                &lt;span class="coda-close-horizontal"&gt;&lt;/span&gt;
+                                &lt;span class="coda-close-vertical"&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/a&gt;
+                    &lt;!-- end close pop-up window button --&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- pop-up window content, article --&gt;
+    &lt;article class="coda-pop-up-content"&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="row justify-content-between"&gt;
+                &lt;div class="col-md-5 col-12"&gt;
+                    &lt;div class="coda-sticky"&gt;
+                        &lt;header class="coda-pop-up-header"&gt;
+                            &lt;h3&gt;Title&lt;/h3&gt;
+                        &lt;/header&gt;
+                        &lt;p&gt;Some information.&lt;/p&gt;
+                        ...
+                        &lt;footer class="coda-pop-up-footer"&gt;
+                            &lt;dl class="coda-description-container"&gt;
+                                &lt;div class="coda-description-item"&gt;
+                                    &lt;dt class="coda-description-name"&gt;the name of the additional description:&lt;/dt&gt;
+                                    &lt;dd class="coda-description-data"&gt;additional description&lt;/dd&gt;
+                                &lt;/div&gt;
+                                ...
+                            &lt;/dl&gt;
+                        &lt;/footer&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="col-md-6 col-lg-5 col-12"&gt;
+                    &lt;div class="coda-sticky"&gt;
+                        &lt;div class='coda-video-responsive'&gt;
+                            &lt;iframe src="https://player.vimeo.com/video/76979871" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+                        &lt;/div&gt;
+                        &lt;div class='coda-video-responsive'&gt;
+                            &lt;iframe src="https://www.youtube.com/embed/pRxwMbWIsFk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+                        &lt;/div&gt;
+                        &lt;img class="coda-img-responsive" src="img/image-for-popup-window.jpg" alt="text"&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/article&gt;
+    &lt;!-- end pop-up window content, article --&gt;
+&lt;/div&gt;
+&lt;!-- End Pop-up window --&gt;</pre>
+                        <p>You can use this snippet as the  initial structure for your popup window.</p>
+                        <p>Now this code snippet should be placed outside this code (file index.html can serve as a sample).</p>
+                        <pre>
+&lt;/main&gt;
+&lt;!-- End Main content --&gt;</pre>
+                        <p>We will link the popup window to our previously created portfolio item. Now in the code of the popup window we will find the following code snippet:</p>
+                        <pre class="html">
+...
+&lt;div id="pop-up-id" class="coda-pop-up-window"&gt;
+...</pre>
+                        <p>Replace the attribute <code class="html">id="pop-up-id"</code> on <code class="html">id="ux-design-pop-up-window"</code></p>
+                        <p>Now find the following code snippet:</p>
+                        <pre>
+...
+&lt;!-- close pop-up window button --&gt;
+&lt;a href="#pop-up-id" class="coda-pop-up-btn"&gt;
+...</pre>
+                        <p>This snippet is a button code that closes the popup window. Accordingly, she needs to specify which window to close. Therefore, this attribute <code class="html">href="#pop-up-id"</code> replace by <code class="html">href="#ux-design-pop-up-window"</code> Your popup window is ready to go. All you have to fill it with relevant information about the project.</p>
+
+                        <p class="sub-title"><strong>How to add timeline items?</strong> In the Experience section, find the following code:</p>
+                        <pre class="html">
+&lt;div class="col-md-5 col-12 coda-experience-timeline-content"&gt;
+    &lt;!-- experience timeline for education --&gt;
+    &lt;div class="coda-experience-timeline"&gt;
+        &lt;div class="coda-timeline-label"&gt;timeline&lt;/div&gt;
+        &lt;!-- experience timeline caption --&gt;
+        &lt;div class="coda-experience-timeline-caption"&gt;
+            &lt;p class="coda-time-interval"&gt;2004 - 2007&lt;/p&gt;
+            &lt;h4 class="coda-underscore"&gt;College&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;!-- end experience timeline caption --&gt;
+        ...
+    &lt;/div&gt;
+    &lt;!-- end experience timeline for education --&gt;
+    &lt;!-- experience timeline for work --&gt;
+    &lt;div class="coda-experience-timeline"&gt;
+        &lt;div class="coda-timeline-label"&gt;timeline&lt;/div&gt;
+        &lt;!-- experience timeline caption --&gt;
+        &lt;div class="coda-experience-timeline-caption"&gt;
+            &lt;p class="coda-time-interval">2014 - present&lt;/p&gt;
+            &lt;h4 class="coda-underscore"&gt;Freelance&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;!-- end experience timeline caption --&gt;
+        ...
+    &lt;/div&gt;
+    &lt;!-- end experience timeline for work --&gt;
+&lt;/div&gt;</pre>
+                        <p>Choose the experience you want to add, whether it is education or work?</p>
+                        <p>For example, you want to add your new place of work. Then the code will look like this:</p>
+                        <pre class="html">
+&lt;div class="col-md-5 col-12 coda-experience-timeline-content"&gt;
+    ...
+    &lt;!-- experience timeline for work --&gt;
+    &lt;div class="coda-experience-timeline"&gt;
+        &lt;div class="coda-timeline-label"&gt;timeline&lt;/div&gt;
+        &lt;!-- experience timeline caption --&gt;
+        &lt;div class="coda-experience-timeline-caption"&gt;
+            &lt;p class="coda-time-interval">2017 - present&lt;/p&gt;
+            &lt;h4 class="coda-underscore"&gt;Some awesome work&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;!-- end experience timeline caption --&gt;
+        &lt;!-- experience timeline caption --&gt;
+        &lt;div class="coda-experience-timeline-caption"&gt;
+            &lt;p class="coda-time-interval">2014 - 2017&lt;/p&gt;
+            &lt;h4 class="coda-underscore"&gt;Freelance&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;!-- end experience timeline caption --&gt;
+        ...
+    &lt;/div&gt;
+    &lt;!-- end experience timeline for work --&gt;
+&lt;/div&gt;</pre>
+                        <p>So you add a brief description of your work place, it will appear in the timeline. Now we need to add a wider description, find the following code and add it as follows:</p>
+                        <pre>
+...
+&lt;!-- experience description item for work --&gt;
+&lt;div class="coda-experience-description-item"&gt;
+    &lt;!-- experience description article --&gt;
+    &lt;article class="coda-experience-description"&gt;
+        &lt;header class="coda-experience-article-header"&gt;
+            &lt;p class="coda-time-interval"&gt;2017 - present&lt;/p&gt;
+            &lt;h3&gt;Some awesome work&lt;/h3&gt;
+        &lt;/header&gt;
+        &lt;p&gt;Some awesome work description ...&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;!-- end experience description article --&gt;
+    &lt;!-- experience description article --&gt;
+    &lt;article class="coda-experience-description"&gt;
+        &lt;header class="coda-experience-article-header"&gt;
+            &lt;p class="coda-time-interval"&gt;2014 - 2017&lt;/p&gt;
+            &lt;h3&gt;Freelance&lt;/h3&gt;
+        &lt;/header&gt;
+        &lt;p&gt;At commodi, consequatur consequuntur corporis cumque ...&lt;/p&gt;
+        &lt;p&gt;A accusantium aliquam, blanditiis ...&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;!-- end experience description article --&gt;
+    ...
+&lt;/div&gt;
+&lt;!-- end experience description for work --&gt;</pre>
+                        <p>Now everything is ready, you have added complete information about your new place where you work. It was easier than you thought.</p>
+
+                        <p class="sub-title"><strong>How do I add a description of my work skills?</strong> Time to describe all your working skills. There is one feature here, you can publish your skills as you own with a percentage rating and just a skill with a wider description. We will consider both options. Add your new skill this way. Find and paste the following code:</p>
+                        <pre>
+&lt;!-- skills bar container --&gt;
+&lt;div class="col-md-5 col-12 coda-skills-bar-container"&gt;
+    &lt;!-- skill bar --&gt;
+    &lt;div class="coda-skill-bar" data-percent="97"&gt;
+        &lt;div class="coda-skill-bar-title"&gt;wordpress&lt;/div&gt;
+        &lt;div class="coda-skill-bar-percent"&gt;&lt;span class="coda-skill-count"&gt;97&lt;/span&gt;%&lt;/div&gt;
+        &lt;div class="coda-skill-bar-bar"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- end skill bar --&gt;
+    &lt;!-- skill bar --&gt;
+    &lt;div class="coda-skill-bar" data-percent="90"&gt;
+        &lt;div class="coda-skill-bar-title"&gt;html&lt;/div&gt;
+        ...</pre>
+                        <p>This was the first option. Consider the second one. Now, find and paste the following code:</p>
+                        <pre>
+&lt;!-- skills term list --&gt;
+&lt;dl class="coda-skills-term-list"&gt;
+    &lt;!-- skill term --&gt;
+    &lt;div class="coda-skill-term-box"&gt;
+        &lt;dt class="coda-skill-term-name"&gt;&lt;span class="coda-underscore"&gt;wordpress&lt;/span&gt;&lt;/dt&gt;
+        &lt;dd class="coda-skill-term-description"&gt;&lt;span class="coda-term-name"&gt;wordpress&lt;/span&gt; - Skill description ...&lt;/dd&gt;
+    &lt;/div&gt;
+    &lt;!-- end skill term --&gt;
+    &lt;!-- skill term --&gt;
+    &lt;div class="coda-skill-term-box"&gt;
+        &lt;dt class="coda-skill-term-name"&gt;&lt;span class="coda-underscore"&gt;html&lt;/span&gt;&lt;/dt&gt;
+        &lt;dd class="coda-skill-term-description"&gt;&lt;span class="coda-term-name"&gt;html&lt;/span&gt; - Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.&lt;/dd&gt;
+    &lt;/div&gt;
+    &lt;!-- end skill term --&gt;
+    ...</pre>
+                        <p>Done!</p>
+
+                        <p class="sub-title"><strong>Add your contact information.</strong> You are almost professional. Find the code and just make the appropriate changes. I think it will be easy for you to do this.</p>
+                        <pre>
+&lt;!-- contacts data --&gt;
+&lt;div class="col-md-6 col-12"&gt;
+    &lt;dl class="coda-contacts-container"&gt;
+        &lt;!-- contact item --&gt;
+        &lt;div class="coda-contact-item"&gt;
+            &lt;dt class="coda-contact-name"&gt;phone:&lt;/dt&gt;
+            &lt;dd class="coda-contact-data"&gt;&lt;a href="tel:+544&nbsp;4779&nbsp;225" class="coda-contact-link coda-underscore"&gt;+544 4779 225&lt;/a&gt;&lt;/dd&gt;
+        &lt;/div&gt;
+        &lt;!-- end contact item --&gt;
+        &lt;!-- contact item --&gt;
+        &lt;div class="coda-contact-item"&gt;
+            &lt;dt class="coda-contact-name"&gt;email:&lt;/dt&gt;
+            &lt;dd class="coda-contact-data"&gt;&lt;a href="mailto:coda@email.com" class="coda-contact-link coda-underscore">coda@email.com&lt;/a&gt;&lt;/dd&gt;
+        &lt;/div&gt;
+        &lt;!-- end contact item --&gt;
+        &lt;!-- contact item --&gt;
+        &lt;div class="coda-contact-item"&gt;
+            &lt;dt class="coda-contact-name"&gt;follow me on&lt;/dt&gt;
+            &lt;dd class="coda-contact-data"&gt;&lt;a href="https://www.facebook.com" class="coda-contact-link coda-underscore"&gt;facebook&lt;/a&gt;&lt;a href="https://twitter.com" class="coda-contact-link coda-underscore"&gt;twitter&lt;/a&gt;&lt;a href="https://www.instagram.com" class="coda-contact-link coda-underscore">instagram&lt;/a&gt;&lt;/dd&gt;
+        &lt;/div&gt;
+        &lt;!-- end contact item --&gt;
+    &lt;/dl&gt;
+&lt;/div&gt;
+&lt;!-- end contacts data --&gt;</pre>
+                        <p>Just do not forget to specify the correct links in this attribute <code class="html">href="https://www.facebook.com"</code></p>
+
+                        <h3>Footer</h3>
+                        <p>What! But this is a easy task for you now. You have mastered the basic skills of working with html, its logic. Congratulations!</p>
+
+                    </section>
+
+                    <hr>
+
+                    <section class="section css-structure">
+
+                        <h2>3. CSS Structure - <div class="btn-scroll-to" data-scroll-to="body">top</div></h2>
+                        <p>We using one CSS files in this template, in which you can make changes. This file is here: css/main.css.  All other files should not be edited.</p>
+                        <p>This file contains all of the specific stylings of the page. In the file of styles, everything is well commented. Its structure looks like this:</p>
+                        <pre class="css">
+/* ------------------------------------------------------
+  Stylesheet Guide
+  ------------------------------------------------------
+
+    1. Global
+        1.1. Fonts
+            1.1.1. Header font - Abril Fatface
+            1.1.2. Text font - Open Sans
+        1.2. General styles
+        1.3. Color scheme
+            1.3.1. Blue (#4aa8fa) - Color scheme
+            1.3.2. Pink (#fa5a88) - Color scheme
+            1.3.3. Green (#2ddf7b) - Color scheme
+        1.4. Preloader
+        1.5. Typography
+        1.6. Custom class
+        1.7. Icons class
+    2. Header
+        2.1. Top panel, logotype
+        2.2. Header text
+    3. Section
+        3.1 Section header
+        3.2. Portfolio section
+            3.2.1. Portfolio filter navigation
+            3.2.2. Portfolio filter item
+        3.3. Experience section
+            3.3.1. Experience filter navigation
+            3.3.2. Experience timeline
+            3.3.3. Experience content
+        3.4. Skills section
+            3.4.1. Skills bar
+            3.4.2. Skills term
+        3.5. Contacts section
+            3.5.1. Contact details
+            3.5.2. Contact form
+    4. Footer
+    5. Pop-up window
+    6. Media queries
+
+------------------------------------------------------ */
+
+/* ------------------------------------------------------
+    1. Global
+------------------------------------------------------ */
+
+    /* ------------------------------------------------------
+        1.1. Fonts
+    ------------------------------------------------------ */
+
+        /* ------------------------------------------------------
+            1.1.1. Header font - Abril Fatface
+        ------------------------------------------------------ */
+
+            @font-face {
+              font-family: "Abril Fatface";
+              font-weight: normal;
+              font-style: normal;
+              src: url("../fonts/Abril-Fatface/AbrilFatface-Regular.eot");
+              src: url("../fonts/Abril-Fatface/AbrilFatface-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Abril-Fatface/AbrilFatface-Regular.woff") format("woff"), url("../fonts/Abril-Fatface/AbrilFatface-Regular.ttf") format("truetype");
+            }
+            ...</pre>
+                        <p>In general, table of contents is placed at the top of this file.</p>
+                        <p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+
+                        <p>In addition to this file, the template also uses other style files. These are the styles of various libraries. They are linked at the top of index.html file, it looks like this:</p>
+                        <pre class="html">
+    ...
+    &lt;!-- Start CSS files --&gt;
+    &lt;link rel="stylesheet" href="libs/bootstrap/bootstrap-reboot.min.css"&gt;
+    &lt;link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css"&gt;
+    &lt;link rel="stylesheet" href="css/main.css"&gt;
+    &lt;!-- End CSS files --&gt;
+&lt;/head&gt;</pre>
+
+                    </section>
+
+                    <hr>
+
+                    <section class="section java-script">
+
+                        <h2>4. JavaScript - <div class="btn-scroll-to" data-scroll-to="body">top</div></h2>
+                        <p>We used one file for scripts that can be edited. But for that, you need some skills. This file is here: js/scripts.js. This javascript file is well commented.</p>
+                        <p>The only thing you may want to edit is to set an active category in the Portfolio section.</p>
+
+                        <p class="sub-title"><strong>So, how to set up active categories in the Portfolio section?</strong> Open in the editor scripts.js. Find this code:</p>
+                        <pre>
+/* Filterizr script */
+    var options = {
+        animationDuration: 0.5,
+        filter: 'all',
+        controlsSelector: '',
+        delay: 0,
+        ...</pre>
+                        <p>We need to change the value for this property <code class="html">filter: 'all',</code> Now set 'all', you can rewrite this value as follows: <code class="html">filter: 'ux-design',</code></p>
+
+                        <p>All JavaScripts files are linked at the bottom of index.html. This code looks like this:</p>
+                        <pre>
+        ...
+        &lt;!-- Start JavaScript files --&gt;
+        &lt;script src="libs/jquery/dist/jquery.min.js">&lt;/script&gt;
+        &lt;script src="libs/filterizr/dist/jquery.filterizr.min.js"&gt;&lt;/script&gt;
+        &lt;script src="libs/in-view/dist/in-view.min.js"&gt;&lt;/script&gt;
+        &lt;script src="js/scripts.js"&gt;&lt;/script&gt;
+        &lt;!-- End JavaScript files --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+                    </section>
+
+                    <hr>
+
+                    <section class="section sources-credits">
+
+                        <h2>5. Sources and Credits - <div class="btn-scroll-to" data-scroll-to="body">top</div></h2>
+                        <p>I've used the following images, icons or other files and plugins as listed.
+
+                        <ul>
+                            <li><a href="https://stocksnap.io/">StockSnap</a></li>
+                            <li><a href="https://unsplash.com/">Unsplash</a></li>
+                            <li><a href="https://www.pexels.com/">Pexels</a></li>
+                            <li><a href="https://getbootstrap.com/">Bootstrap 4 (grid system)</a></li>
+                            <li><a href="https://jquery.com/">jQuery</a></li>
+                            <li><a href="http://yiotis.net/filterizr/">Filterizr</a></li>
+                            <li><a href="https://github.com/camwiegert/in-view">In-view.js</a></li>
+                        </ul>
+
+                    </section>
+
+                    <hr>
+
+                    <section class="section sources-credits">
+
+                        <p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the templates on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+                        <p class="right"><strong>AirFast</strong></p>
+
+                    </section>
+
+                    <hr>
+
+                </main>
+
+			</div>
+
+		</div>
+
+	</div>
+
+    <!-- START btn scroll to top -->
+    <div id="scroll-to-top" class="btn-scroll-to" data-scroll-to="body">
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </div>
+    <!-- END btn scroll to top -->
+
+	<!-- JavaScript -->
+	<script src="js/jquery.min.js"></script><!-- jQuery -->
+	<script src="js/in-view.min.js"></script><!-- In-view -->
+	<script src="js/highlight.pack.js"></script><!-- highlight -->
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>

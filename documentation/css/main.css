@@ -1,0 +1,328 @@
+@font-face {
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/Open-Sans/OpenSans-Regular.eot");
+    src: url("../fonts/Open-Sans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Open-Sans/OpenSans-Regular.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-style: normal;
+    src: url("../fonts/Open-Sans/OpenSans-SemiBold.eot");
+    src: url("../fonts/Open-Sans/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Open-Sans/OpenSans-SemiBold.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/Open-Sans/OpenSans-Bold.eot");
+    src: url("../fonts/Open-Sans/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Open-Sans/OpenSans-Bold.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-Bold.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #2d2d2d;
+    line-height: 1.7;
+}
+
+.row.is-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans";
+    font-weight: 700;
+    color: #333;
+}
+
+hr {
+    color: #eee;
+    background-color: #eee;
+    width: 100%;
+}
+
+a {
+    display: inline-block;
+    color: #4aa8fa;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+a:hover, a:focus, .btn-scroll-to:hover {
+    color: #999;
+    text-decoration: none;
+}
+
+.logo {
+    margin: 50px 0;
+}
+
+.logo .text-cursor {
+    position: relative;
+    display: inline;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: .2;
+    padding: 0;
+    margin: 0;
+}
+
+.logo .text-cursor:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 24px;
+    width: 2px;
+    bottom: 4px;
+    right: -5px;
+    background-color: #4aa8fa;
+    -webkit-animation: codaBlink .8s infinite;
+    animation: codaBlink .8s infinite;
+}
+
+@-webkit-keyframes codaBlink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes codaBlink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.sticky {
+    position: sticky;
+    top: 50px;
+}
+
+.menu {
+    background-color: #eee;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.menu ul {
+    display: inline-block;
+}
+
+.menu ul, .menu li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.menu li {
+    font-size: 18px;
+    padding-bottom: 7px;
+    text-align: left;
+}
+
+.btn-scroll-to {
+    color: #999;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-scroll-to:hover, .btn-scroll-to.active {
+    color: #4aa8fa;
+    text-decoration: none;
+}
+
+h2 .btn-scroll-to {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.main-content {
+    margin-left: 50px;
+}
+
+.section {
+    padding: 20px 0;
+    margin: 20px 0 50px;
+}
+
+.color-scheme {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.color-scheme.blue {
+    background-color: #4aa8fa;
+}
+
+.color-scheme.pink {
+    background-color: #fa5a88;
+}
+
+.color-scheme.green {
+    background-color: #2ddf7b;
+}
+
+.color-name {
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: top;
+}
+
+h3 {
+    margin-top: 40px;
+}
+
+p.sub-title {
+    margin-top: 50px;
+}
+
+strong, b {
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
+code.hljs {
+    display: inline-block;
+    padding: 1px 12px 4px;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin: 0 5px;
+}
+
+pre.hljs {
+    padding: 0 15px;
+    margin: 20px 0;
+    border-radius: 2px;
+}
+
+
+#scroll-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #eee;
+    text-align: center;
+    cursor: pointer;
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: all .2s ease-in-out, -webkit-transform .05s;
+    transition: all .2s ease-in-out, -webkit-transform .05s;
+    transition: all .2s ease-in-out, transform .05s;
+    transition: all .2s ease-in-out, transform .05s, -webkit-transform .05s;
+    z-index: 10;
+}
+
+#scroll-to-top::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-top: 2px solid #999;
+    border-left: 2px solid #999;
+    top: 21px;
+    left: 19px;
+    transform: rotate(45deg);
+    transition: all .05s ease-in-out;
+}
+
+#scroll-to-top:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    background-color: #4aa8fa;
+}
+
+#scroll-to-top:hover::after {
+    border-color: #fff;
+}
+
+ul li, ol li {
+    list-style-type: none;
+}
+
+.main-content ul li:before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #4aa8fa;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-bottom: 2px;
+}
+
+.main-content ol {
+    counter-reset: myCounter;
+}
+
+.main-content ol li:before {
+    counter-increment: myCounter;
+    content: counter(myCounter) ".";
+    color: #4aa8fa;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 991px) {
+    .main-content {
+        margin-left: 0;
+    }
+}
